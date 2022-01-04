@@ -1,11 +1,16 @@
+from math import inf
+
+
 def main():
-  # print("Keep it logically awesome.")
+  import random
+  f = open("quotes.txt")
+  quotes = f.readlines()
+  f.close()
+  n=len(quotes)
+  i=random.randint(0,n)
 
-  #f = open("quotes.txt")
-  #quotes = f.readlines()
-  #f.close()
 
-  #print(quotes)
+  print(quotes[i])
 
 if __name__== "__main__":
   main()
